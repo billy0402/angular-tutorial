@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { NgPipesModule } from 'ngx-pipes';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +18,7 @@ import { Lesson8Component } from './components/lesson8/lesson8.component';
 import { ModelDrivenComponent } from './components/model-driven/model-driven.component';
 
 @NgModule({
+  // Component
   declarations: [
     AppComponent,
     Lesson1Component,
@@ -26,11 +31,18 @@ import { ModelDrivenComponent } from './components/model-driven/model-driven.com
     Lesson8Component,
     ModelDrivenComponent
   ],
+  // Module
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    NgPipesModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
+  // Service
   providers: [],
+  // 程式進入點
   bootstrap: [AppComponent]
 })
 export class AppModule { }
