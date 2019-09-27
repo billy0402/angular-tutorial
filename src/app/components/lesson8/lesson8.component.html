@@ -1,1 +1,22 @@
-<p>lesson8 works!</p>
+<p>
+    lesson8 works!
+</p>
+
+Height:
+{{ _bmiService.height }}cm
+<br>
+Weight:
+{{ _bmiService.weight }}kg
+<br>
+BMI:
+{{ _bmiService.getBMI }}
+
+<p>
+    <input type="text" [(ngModel)]="data.body">
+    <br>
+    <input type="number" [(ngModel)]="data.postId">
+    <br>
+    <button (click)="sendData()">Send</button>
+</p>
+
+{{ data | json }}

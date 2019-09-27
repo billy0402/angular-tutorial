@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson2Component implements OnInit {
 
+  isHide: boolean = true;
+  score: number = 0;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  change() {
+    this.isHide = !this.isHide;
   }
 
 }

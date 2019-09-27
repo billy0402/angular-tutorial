@@ -1,1 +1,36 @@
-<p>lesson3 works!</p>
+<!-- ngFor -->
+<ul>
+    <li *ngFor="let item of week">
+        {{ item }}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of users">
+        name: {{ item.name }}
+        sex: {{ item['sex'] }}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let score of scores">
+        {{ score }}分
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let score of scores" [ngStyle]="{'color': score < 60 ? 'red' : 'green'}">
+        {{ score }}分
+    </li>
+</ul>
+
+{{ users | json }}
+
+<br>
+{{ now | date:"yyyy-MM-dd" }}
+<br>
+{{ now }}
+
+<!-- ngPipes -->
+<br>
+{{ 'foo' | reverse }}

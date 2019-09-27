@@ -1,1 +1,16 @@
-<p>homework1 works!</p>
+English: <input type="text" [(ngModel)]="word.english">
+Chinese: <input type="text" [(ngModel)]="word.chinese">
+<button (click)="save()">Save</button>
+<br>
+Filter:<input type="text" [(ngModel)]="filter">
+
+<table id="customers">
+    <tr>
+        <th>English</th>
+        <th>Chinese</th>
+    </tr>
+    <tr *ngFor="let item of vocabulary | filterByImpure: ['english']: filter">
+        <td>{{ item.english }}</td>
+        <td>{{ item.chinese }}</td>
+    </tr>
+</table>

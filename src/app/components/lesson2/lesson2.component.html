@@ -1,1 +1,14 @@
-<p>lesson2 works!</p>
+<!-- ngIf -->
+<h1 *ngIf="isHide">ABC</h1>
+<button (click)="change()">Change</button>
+
+<p>
+    <input type="number" [(ngModel)]="score">
+</p>
+
+<div *ngIf="score >= 60">
+    好棒
+</div>
+<div *ngIf="score < 60">
+    好笨
+</div>

@@ -1,1 +1,8 @@
-<p>lesson5 works!</p>
+{{ id }}
+{{ name }}
+
+<p>
+    <input type="number" [(ngModel)]="money">
+    <br>
+    <app-lesson4 [money]="money" (moneyChange)="money = $event"></app-lesson4>
+</p>

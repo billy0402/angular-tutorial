@@ -1,1 +1,48 @@
-<p>lesson1 works!</p>
+<!-- Data Binding -->
+
+<!-- () html -> ts -->
+<!-- [] ts -> html -->
+<!-- [()] html <-> ts -->
+
+<!-- 單向綁定 -->
+<h1>{{ title }}</h1>
+<p>
+    {{ num + 100 }}
+    <br>
+    <input type="number" [value]="num">
+</p>
+
+<!-- 雙向綁定 -->
+<p>
+    <input type="number" [(ngModel)]="num">
+    <br>
+    {{ num }}
+</p>
+
+<!-- 屬性綁定 -->
+<p>
+    <a [href]="link">Google</a>
+</p>
+
+<!-- 事件綁定 -->
+<p>
+    <button (click)="test()">Test</button>
+</p>
+
+<p>
+    TW$: <input type="number" [(ngModel)]="money">
+    <br>
+    US$: {{ money*30 }}
+    <br>
+    JP$: {{ money/0.2 }}
+</p>
+
+<p>
+    TW$: <input type="number" [(ngModel)]="tw">
+    <br>
+    US$: {{ us }}
+    <br>
+    JP$: {{ jp }}
+    <br>
+    <button (click)="count()">Count</button>
+</p>
