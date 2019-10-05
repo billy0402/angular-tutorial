@@ -1,4 +1,10 @@
-# Tutorial
+# angular-tutorial
+
+## environment
+- [macOS 10.14.6](https://www.apple.com/tw/macos/mojave/)
+- [VSCode 1.38.1](https://code.visualstudio.com/)
+- [nvm 0.34.0, node 10.16.3, npm 6.9.0](https://github.com/nvm-sh/nvm)
+- [Angular CLI 8.3.6](https://github.com/angular/angular-cli)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
